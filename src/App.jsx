@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <OptionsBar setLanguage={setLanguage} setTopic={setTopic}/> 
-      {/*<Board language={language} topic={topic}/>*/}
+      <Board language={language} topic={topic}/>
     </div>
     
   )

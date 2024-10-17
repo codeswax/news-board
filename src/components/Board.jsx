@@ -7,7 +7,7 @@ const Board = ({ language, topic }) => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const api = `https://newsapi.org/v2/everything?q=${topic}&language=${language}&apiKey=${import.meta.env.VITE_API_KEY}`;
+    const api = `http://newsapi.org/v2/everything?q=${topic}&language=${language}&apiKey=${import.meta.env.VITE_API_KEY}`;
     fetch(api)
       .then(response => response.json())
       .then(data => {
